@@ -1,3 +1,4 @@
+from graia.broadcast import Broadcast
 from graia.application import GraiaMiraiApplication, Session
 from graia.application.message.chain import MessageChain
 import asyncio
@@ -13,7 +14,7 @@ app = GraiaMiraiApplication(
     connect_info=Session(
         host="http://localhost:8080", # 填入 httpapi 服务运行的地址
         authKey="UltraLock.Client.Qbot", # 填入 authKey
-        account=2827539652, # 你的机器人的 qq 号
+        account=1561154297, # 你的机器人的 qq 号
         websocket=True # Graia 已经可以根据所配置的消息接收的方式来保证消息接收部分的正常运作.
     )
 )
