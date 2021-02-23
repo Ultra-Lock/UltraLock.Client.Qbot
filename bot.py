@@ -20,8 +20,8 @@ app = GraiaMiraiApplication(
 )
 
 @bcc.receiver("FriendMessage")
-async def friend_message_listener(app: GraiaMiraiApplication, friend: Friend):
-    await app.sendFriendMessage(friend, MessageChain.create([
+async def group_message_listener(app: GraiaMiraiApplication, group:938324275):
+    await app.sendGroupMessage(Group, MessageChain.create([
         Plain("Hello, World!")
     ]))
 
